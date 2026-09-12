@@ -5,7 +5,14 @@
 隕石をよけるだけのミニゲーム……だと思わせておいて、クリアすると立ち絵つきの
 ストーリーが始まる。最後に「誕生日おめでとう」が浮かび上がる。
 
-## 遊びかた
+## 遊ぶ
+
+https://yuusaku000.github.io/sunstory/
+
+main に push すると GitHub Actions が web ビルドして自動でデプロイする
+（`.github/workflows/deploy.yml`）。
+
+## 手元で動かす
 
 ```bash
 flutter run -d chrome
