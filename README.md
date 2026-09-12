@@ -9,8 +9,14 @@
 
 https://yuusaku000.github.io/sunstory/
 
-main に push すると GitHub Actions が web ビルドして自動でデプロイする
-（`.github/workflows/deploy.yml`）。
+更新するときは、コードを直してから:
+
+```bash
+bash tool/deploy.sh
+```
+
+`flutter build web` した結果を `gh-pages` ブランチに push し直す。
+GitHub Pages はそのブランチを見ている（`main` にはソースしか入っていない）。
 
 ## 手元で動かす
 
