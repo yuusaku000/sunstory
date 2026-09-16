@@ -52,7 +52,13 @@ Web サーバーだけ立てたいときは `flutter run -d web-server --web-por
 
 ## 立ち絵
 
-`assets/chara/` に、素材の4枚並び画像から切り出したものが入っている。
+元絵は `art/` に置いてある。1枚に4表情が横並びになっているもの3枚。
+
+```bash
+python tool/cut_sprites.py    # art/ → assets/chara/ を作り直す
+```
+
+ゲームが読むのは切り出し後の `assets/chara/` のほう。
 
 - `{sun,moon,earth}_{normal,surprise,sad,happy}.png` … 全身（左から 普通・驚き・落ち込み・喜び）
 - `{sun,moon,earth}_face.png` … 顔だけ。ミニゲームの自機と公転アニメで使う
